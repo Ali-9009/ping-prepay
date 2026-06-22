@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+
+/* variables */
+:root {
+    --primary-color: #02343b;
+    --secondary-color: #063137;
+    --logo-color: #41b79b;
+}
+
+
+
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+.animate-marquee {
+    animation: marquee 35s linear infinite;
+}
+
+.animate-marquee-reverse {
+    animation: marquee-reverse 35s linear infinite;
+}
+
+
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.animate-fl {
+    animation: floating 4s ease-in-out infinite;
+}
+
+@keyframes grow {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.06);
+    }
+}
+
+.animate-grow {
+    animation: grow 2.5s ease-in-out infinite;
+}
