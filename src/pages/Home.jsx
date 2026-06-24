@@ -110,7 +110,7 @@ function Home() {
                     {/* Heading */}
                     <div className="text-center text-white max-w-5xl mx-auto">
                         <h2 className="text-4xl md:text-6xl font-bold">
-                            Attract and Retain Prepaid Customers Instantly.
+                            Attract and Retain Prepaid Customer Instantly.
                         </h2>
 
                         <p className="mt-4 text-lg text-gray-200">
