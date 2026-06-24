@@ -165,7 +165,7 @@ function Home() {
 
             <Brands />
 
-            <div className="max-w-390 mx-auto py-12 px-4">
+            <div className="max-w-360 mx-auto py-12 px-4">
                 <div className="grid lg:grid-cols-2 items-center gap-12 lg:gap-16">
 
                     {/* Content */}
@@ -198,7 +198,7 @@ function Home() {
             </div>
 
             <section className="px-3 py-3">
-                <div className="bg-(--secondary-color) max-w-390 mx-auto pt-20 px-6 overflow-hidden rounded-3xl">
+                <div className="bg-(--secondary-color) max-w-360 mx-auto pt-20 px-6 overflow-hidden rounded-3xl">
                     <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
                         {/* Left Content */}

@@ -8,6 +8,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Button from "../components/PrimaryBtn";
+import { caseStudies } from "../data/caseStudies";
+import { Link } from "react-router-dom";
 
 
 const services = [
@@ -115,7 +117,29 @@ export default function Industries() {
                 </div>
             </section>
 
-            <div className="max-w-390 mx-auto py-12 px-4">
+            {caseStudies.map((item) => (
+                <div key={item.slug} className="max-w-360 mx-auto py-12 px-4">
+                    <div className="grid lg:grid-cols-2 items-center gap-6">
+                        <div>
+                            <h2 className="primary-heading mb-3">{item.title}</h2>
+
+                            <p className="text-lg leading-8 font-medium mb-8">
+                                {item.excerpt}
+                            </p>
+
+                            <Link to={`/case-studies/${item.slug}`}>
+                                <Button text="Read Case Study" />
+                            </Link>
+                        </div>
+
+                        <div className="flex items-end justify-end">
+                            <img src={item.image} alt={item.title} />
+                        </div>
+                    </div>
+                </div>
+            ))}
+
+            <div className="max-w-360 mx-auto py-12 px-4">
                 <div className="grid lg:grid-cols-2 items-center gap-6">
 
                     {/* Content */}
@@ -143,7 +167,7 @@ export default function Industries() {
                 </div>
             </div>
 
-            <div className="max-w-390 mx-auto py-12 px-4">
+            <div className="max-w-360 mx-auto py-12 px-4">
                 <div className="grid lg:grid-cols-2 items-center gap-6">
 
                     {/* Content */}
@@ -171,7 +195,7 @@ export default function Industries() {
                 </div>
             </div>
 
-            <div className="max-w-390 mx-auto py-12 px-4">
+            <div className="max-w-360 mx-auto py-12 px-4">
                 <div className="grid lg:grid-cols-2 items-center gap-6">
 
                     {/* Content */}

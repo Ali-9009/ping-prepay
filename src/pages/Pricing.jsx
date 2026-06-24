@@ -7,7 +7,7 @@ export default function Pricing() {
     return (
         <>
             <section className="relative w-full overflow-hidden bg-(--secondary-color) bg-[url('/assets/element-5.png')] bg-cover bg-center bg-no-repeat md:pt-32 pt-8 text-white px-6">
-                <div className="mx-auto max-w-390 grid lg:grid-cols-2  grid-cols-1 items-center justify-center ">
+                <div className="mx-auto max-w-360 grid lg:grid-cols-2  grid-cols-1 items-center justify-center ">
                     <div>
                         <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl">
                             Choose Your POS. Fuel Growth. Unlock Profits

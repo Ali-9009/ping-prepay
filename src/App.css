@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 @reference "tailwindcss";
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Sora', sans-serif;
     background: #d1e4dd;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 .primary-heading {
-    @apply lg:text-5xl md:text-4xl leading-14 text-3xl font-bold text-black;
+    @apply lg:text-5xl md:text-4xl leading-14 text-3xl font-semibold text-black;
 }

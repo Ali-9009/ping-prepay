@@ -7,25 +7,21 @@ export default function Button({
     type = "button",
     className = "",
 }) {
-    const baseClass = `px-6 py-2 rounded-full cursor-pointer
+    const baseClass = `inline-flex items-center justify-center px-6 py-2 rounded-full cursor-pointer
     bg-(--primary-color) text-white 
     hover:bg-(--secondary-color) hover:text-white
     transition-all duration-300 ${className}`;
 
     if (to) {
         return (
-            <Link to={to} className={`${baseClass} block`}>
+            <Link to={to} className={baseClass}>
                 {text}
             </Link>
         );
     }
 
     return (
-        <button
-            type={type}
-            onClick={onClick}
-            className={baseClass}
-        >
+        <button type={type} onClick={onClick} className={baseClass}>
             {text}
         </button>
     );

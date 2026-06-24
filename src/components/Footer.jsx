@@ -1,25 +1,41 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 const footerLinks = [
     {
         title: "Case Studies",
-        links: ["Aawireless", "Product Features", "Swift"],
+        links: [
+            { label: "Aawireless", to: "/aawireless" },
+            { label: "Product Features", to: "/features" },
+            { label: "Swift", to: "/swift" },
+        ],
     },
     {
         title: "Company",
-        links: ["About Us", "DMCA", "Case Studies", "Become a Dealer"],
+        links: [
+            { label: "About Us", to: "/about" },
+            { label: "DMCA", to: "/dmca" },
+            { label: "Case Studies", to: "/case-studies" },
+            { label: "Become a Dealer", to: "/become-a-dealer" },
+        ],
     },
     {
         title: "Resources",
-        links: ["Contact Us", "Refund Policy"],
+        links: [
+            { label: "Contact Us", to: "/contact" },
+            { label: "Refund Policy", to: "/refund-policy" },
+        ],
     },
     {
         title: "Legal",
-        links: ["Terms & Conditions", "Privacy Policy", "Regulatory"],
+        links: [
+            { label: "Terms & Conditions", to: "/terms-conditions" },
+            { label: "Privacy Policy", to: "/privacy-policy" },
+            { label: "Regulatory", to: "/regulatory" },
+        ],
     },
 ];
-
 const Footer = () => {
     const [status, setStatus] = useState("");
 
@@ -81,13 +97,13 @@ const Footer = () => {
 
                                 <ul className="space-y-3">
                                     {section.links.map((link) => (
-                                        <li key={link}>
-                                            <a
-                                                href="#"
+                                        <li key={link.label}>
+                                            <Link
+                                                to={link.to}
                                                 className="text-sm text-white/65 transition hover:text-white"
                                             >
-                                                {link}
-                                            </a>
+                                                {link.label}
+                                            </Link>
                                         </li>
                                     ))}
                                 </ul>

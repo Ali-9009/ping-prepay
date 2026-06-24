@@ -65,7 +65,7 @@ const Navbar = () => {
         { label: "Features", to: "/feature" },
         { label: "Pricing", to: "/pricing" },
         { label: "Enterprise", to: "/enterprise" },
-        { label: "About Us", to: "/aboutus" },
+        { label: "About Us", to: "/about-us" },
         { label: "Contact Us", to: "/contact" },
     ];
 
@@ -110,7 +110,7 @@ const Navbar = () => {
 
     return (
         <div className="w-full bg-(--secondary-color) relative z-50">
-            <nav className="w-full max-w-390 mx-auto px-6 lg:px-12 py-5 flex items-center justify-between">
+            <nav className="w-full max-w-390 mx-auto px-6 py-5 flex items-center justify-between">
                 {/* Logo */}
                 <div className="shrink-0">
                     <Link to="/">
@@ -144,8 +144,8 @@ const Navbar = () => {
 
                         <div
                             className={`fixed left-0 right-0 top-21 w-screen bg-(--primary-color) border-b border-white/10 shadow-[0_50px_90px_-20px_rgba(0,0,0,0.85)] transition-all duration-300 origin-top transform pt-8 ${isSolutionsHovered
-                                    ? "opacity-100 scale-y-100 pointer-events-auto"
-                                    : "opacity-0 scale-y-95 pointer-events-none"
+                                ? "opacity-100 scale-y-100 pointer-events-auto"
+                                : "opacity-0 scale-y-95 pointer-events-none"
                                 }`}
                         >
                             <div className="max-w-7xl mx-auto px-16 pb-14 grid grid-cols-4 gap-14 text-left">
